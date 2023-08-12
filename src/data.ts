@@ -58,7 +58,7 @@ export const sample_foods:Food[]=[
     },
     {
         id:'6',
-        name:'vagi pizza',
+        name:'vegetable pizza',
         Price:30,
         tag:['Pizza','lunch'],
         favorite:false,
