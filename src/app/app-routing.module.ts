@@ -1,6 +1,11 @@
-import { Component, NgModule } from '@angular/core';
-import { Router, RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './component/pages/home/home.component';
+import { TagComponent } from './component/pages/tag/tag.component';
+import { FoodPageComponent } from './component/pages/food-page/food-page.component';
+import { CartPageComponent } from './component/pages/cart-page/cart-page.component';
+import { NotFoundComponent } from './component/pages/not-found/not-found.component';
+import { LoginComponent } from './component/pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -8,7 +13,19 @@ const routes: Routes = [
   },
   {
     path:'search/:searchTerm', component:HomeComponent
-  }
+  },
+  {
+    path:'tag/:tag',component:HomeComponent
+  },
+  {
+    path:'food/:id',component:FoodPageComponent
+  },
+  {
+    path:'cart-page',component:CartPageComponent
+  },
+  {
+    path:'login',component:LoginComponent
+  },
 ];
 
 @NgModule({

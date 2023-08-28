@@ -1,33 +1,36 @@
-import { Food } from "./app/models/food"
+import { Food } from "./app/shared/models/food"
+import { Tag } from "./app/shared/models/tag"
+
 
 export const sample_foods:Food[]=[
     {
         id:'1',
-        name:'chicken soup',
-        Price:30,
-        tag:['soup'],
+        name:'Chicken Soup',
+        Price:10,
+        tag:['Soup', 'Dinner'],
         favorite:true,
         stars:'⭐',
         imageUrl:'assets/Images/food-1.jpg',
         origins:['Asian'],
-        cookTime:'30-35'
+        cookTime:'30-35',
+        
     },
     {
         id:'2',
         name:'Meatball',
-        Price:35,
-        tag:['meatball'],
+        Price:15,
+        tag:['Meatball','Lunch','Slowfood'],
         favorite:false,
         stars:'⭐',
         imageUrl:'assets/Images/food-2.jpg',
-        origins:['middle east','china'],
+        origins:['Middle East','China'],
         cookTime:'30-35'
     },
     {
         id:'3',
         name:'Cheese Burger',
-        Price:20,
-        tag:['burger'],
+        Price:10,
+        tag:['Burger','FastFood','Lunch'],
         favorite:true,
         stars:'⭐',
         imageUrl:'assets/Images/food-3.jpg',
@@ -37,30 +40,30 @@ export const sample_foods:Food[]=[
     {
         id:'4',
         name:'Hamburger',
-        Price:25,
-        tag:['burger'],
+        Price:15,
+        tag:['Burger','FastFood','Lunch'],
         favorite:false,
         stars:'⭐',
         imageUrl:'assets/Images/food-4.jpg',
-        origins:['us','Germany'],
+        origins:['US','Germany'],
         cookTime:'20-25'
     },
     {
         id:'5',
         name:'French Fries',
-        Price:10,
-        tag:['Fries'],
+        Price:5,
+        tag:['Fry','FastFood'],
         favorite:true,
         stars:'⭐',
         imageUrl:'assets/Images/food-5.jpg',
-        origins:['France','belgium'],
+        origins:['France','Belgium'],
         cookTime:'10-15'
     },
     {
         id:'6',
-        name:'vegetable pizza',
-        Price:30,
-        tag:['Pizza','lunch'],
+        name:'Vegetable Pizza',
+        Price:12,
+        tag:['Pizza','Lunch','FastFood'],
         favorite:false,
         stars:'⭐',
         imageUrl:'assets/Images/food-6.jpg',
@@ -69,9 +72,9 @@ export const sample_foods:Food[]=[
     },
     {
         id:'7',
-        name:'chipotle',
+        name:'Chipotle',
         Price:10,
-        tag:['slowfood','lunch'],
+        tag:['Slowfood','Lunch'],
         favorite:true,
         stars:'⭐',
         imageUrl:'assets/Images/food-7.jpg',
@@ -81,12 +84,22 @@ export const sample_foods:Food[]=[
     {
         id:'8',
         name:'Cheese Pizza',
-        Price:20,
-        tag:['pizza'],
+        Price:10,
+        tag:['Pizza',"FastFood"],
         favorite:false,
         stars:'⭐',
         imageUrl:'assets/Images/food-8.jpg',
         origins:['Italy'],
         cookTime:'20-25'
     },
+]
+export const sample_tags:Tag[]=[
+{name: 'All',count:8},
+{name: 'FastFood',count:5},
+{name:'Pizza', count:2},
+{name:'Lunch', count:5},
+{name:'Slowfood', count:2},
+{name:'Burger', count:2},
+{name:'Fry',count:1},
+{name:'Soup',count:1},
 ]

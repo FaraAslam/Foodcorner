@@ -8,13 +8,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/pages/home/home.component';
 import { SearchComponent } from './component/pages/home/search/search.component';
+import { TagComponent } from './component/pages/tag/tag.component';
+import { FoodPageComponent } from './component/pages/food-page/food-page.component';
+import { CartPageComponent } from './component/pages/cart-page/cart-page.component';
+import { TitleComponent } from './component/pages/title/title.component';
+import { NotFoundComponent } from './component/pages/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './component/pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    TagComponent,
+    FoodPageComponent,
+    CartPageComponent,
+    TitleComponent,
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +35,7 @@ import { SearchComponent } from './component/pages/home/search/search.component'
    MatToolbarModule,
    MatIconModule,
    MatButtonModule,
-   
+   HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
